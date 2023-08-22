@@ -1,0 +1,250 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: calibri;
+}
+
+:root {
+  --primary: #003d8f;
+  --body: #f0f0f0;
+  --color: #ffffff;
+  --loginBut: #0b9dcc;
+  --sunBackground: #ffd176;
+  --footerColor: #0b1420;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary);
+  padding: 10px 25px;
+}
+
+header .logo-cont {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+header .logo-cont img {
+  width: 100px;
+  height: 30px;
+  user-select: none;
+}
+
+header .logo-cont h1 {
+  font-size: 30px;
+  color: var(--color);
+}
+
+.search-box input {
+  width: 400px;
+  height: 40px;
+  border: 1px solid var(--color);
+  outline: none;
+  background-color: transparent;
+  color: var(--color);
+  padding: 5px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.icon {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.icon i {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.icon #sun {
+  background-color: var(--sunBackground);
+  border-radius: 50%;
+  padding: 7px;
+  color: var(--primary);
+}
+
+.icon #question {
+  color: var(--color);
+}
+
+section {
+  background-color: var(--body);
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 0px;
+  gap: 25px;
+}
+
+.webmail-login {
+  background-color: var(--color);
+  padding: 30px;
+}
+
+.webmail-login .webmail-login-h1 {
+  font-weight: normal;
+  font-size: 25px;
+}
+
+.webmail-login input {
+  width: 450px;
+  height: 30px;
+  border: 1px solid lightgrey;
+  outline: none;
+  padding: 5px;
+}
+
+.webmail-login input:focus {
+  border: 1px solid var(--loginBut);
+}
+
+.login-but {
+  width: 100%;
+  margin: 10px 0px;
+  padding: 10px;
+  background-color: var(--loginBut);
+  border: none;
+  outline: none;
+  color: var(--color);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 890px) {
+  .search-box input {
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+  }
+}
+
+@media (max-width: 550px) {
+  .webmail-login input {
+    width: 270px;
+  }
+
+  .search-box input {
+    width: 350px;
+  }
+
+  .email-marketing {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .media-query {
+    width: 350px;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.email-marketing {
+  background-color: var(--color);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.email-marketing .email-marketing-content {
+  width: 220px;
+}
+
+.email-marketing .email-marketing-img-cont img {
+  width: 250px;
+  /* height: 50px; */
+}
+
+.email-marketing .email-marketing-content h1,
+p {
+  /* font-weight: normal; */
+  padding: 7px 0px;
+}
+
+.email-marketing .email-marketing-content .email-marketing-but {
+  padding: 7px;
+  cursor: pointer;
+  color: var(--color);
+  background-color: var(--loginBut);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.media-query {
+  background-color: var(--color);
+  padding: 15px;
+}
+
+.media-query p a {
+  text-decoration: none;
+  color: var(--loginBut);
+}
+
+.IONOS-Logins h1 {
+  text-align: left;
+  padding: 10px 0px;
+}
+
+.IONOS-Logins .IONOS-Logins-grid-cont {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 30px;
+  /* overflow-x: scroll; */
+}
+
+.IONOS-Logins .IONOS-Logins-grid-cont .IONOS-Logins-cont {
+  background-color: var(--color);
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.IONOS-Logins .IONOS-Logins-grid-cont .IONOS-Logins-cont:hover {
+  box-shadow: 0px 0px 5px grey;
+}
+
+.IONOS-Logins .IONOS-Logins-grid-cont .IONOS-Logins-cont a {
+  text-decoration: none;
+  color: var(--loginBut);
+}
+
+.IONOS-Logins .IONOS-Logins-grid-cont .IONOS-Logins-cont i {
+  font-size: 50px;
+  color: transparent;
+  -webkit-text-stroke: 2px black;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 20px 50px;
+}
+
+footer a {
+  color: var(--footerColor);
+  text-decoration: none;
+  font-size: 17px;
+}
